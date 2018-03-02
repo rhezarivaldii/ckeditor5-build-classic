@@ -30,12 +30,11 @@
     "@ckeditor/ckeditor5-paragraph": "^1.0.0-alpha.2",
     "@ckeditor/ckeditor5-theme-lark": "^1.0.0-alpha.2",
     "@ckeditor/ckeditor5-upload": "^1.0.0-alpha.2",
-    "babel-minify-webpack-plugin": "^0.2.0",
-    "postcss-loader": "^2.0.10",
+    "postcss-loader": "^2.1.1",
     "raw-loader": "^0.5.1",
-    "style-loader": "^0.19.1",
-    "webpack": "^3.10.0",
-    "webpack-sources": "1.0.1"
+    "style-loader": "^0.20.2",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10"
   },
   "engines": {
     "node": ">=6.0.0",

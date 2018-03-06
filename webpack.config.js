@@ -13,6 +13,7 @@ const { bundler } = require( '@ckeditor/ckeditor5-dev-utils' );
 const { getPostCssConfig } = require( '@ckeditor/ckeditor5-dev-utils' ).styles;
 const CKEditorWebpackPlugin = require( '@ckeditor/ckeditor5-dev-webpack-plugin' );
 const buildConfig = require( './build-config' );
+const UglifyJsWebpackPlugin = require( 'uglifyjs-webpack-plugin' );
 
 module.exports = {
 	devtool: 'source-map',
@@ -25,6 +26,19 @@ module.exports = {
 		libraryTarget: 'umd',
 		libraryExport: 'default',
 		library: buildConfig.moduleName
+	},
+
+	optimization: {
+		minimizer: [
+			new UglifyJsWebpackPlugin( {
+				sourceMap: true,
+				uglifyOptions: {
+					compress: {
+						inline: 2
+					}
+				}
+			} ),
+		]
 	},
 
 	plugins: [

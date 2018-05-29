@@ -30,24 +30,25 @@ module.exports = {
 		'@ckeditor/ckeditor5-image/src/imageupload',
 		'@ckeditor/ckeditor5-link/src/link',
 		'@ckeditor/ckeditor5-list/src/list',
-		'@ckeditor/ckeditor5-paragraph/src/paragraph'
+		'@ckeditor/ckeditor5-paragraph/src/paragraph',
+		'@ckeditor/ckeditor5-alignment/src/alignment',
+		'@ckeditor/ckeditor5-font/src/fontfamily',
+		'@ckeditor/ckeditor5-font/src/fontsize',
+		'@ckeditor/ckeditor5-basic-styles/src/underline',
+
 	],
 
 	// Editor config.
 	config: {
 		toolbar: {
 			items: [
-				'heading',
-				'|',
 				'bold',
 				'italic',
+				'underline',
 				'link',
-				'bulletedList',
-				'numberedList',
-				'imageUpload',
-				'blockQuote',
-				'undo',
-				'redo'
+				'alignment',
+				'fontfamily',
+				'fontsize'
 			]
 		},
 
